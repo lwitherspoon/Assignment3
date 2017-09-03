@@ -9,8 +9,7 @@ public class RandomMonthNameTest {
         int monthNumber = 9;
         String expected = "September";
 
-        RandomMonth randomMonth = new RandomMonth();
-        assertEquals("Failed to return month name", expected, randomMonth.displayMonthName(monthNumber));
+        assertEquals("Failed to return month name", expected, RandomMonth.displayMonthName(monthNumber));
     }
 
 }

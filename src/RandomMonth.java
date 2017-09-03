@@ -1,3 +1,5 @@
+import java.util.Random;
+
 /**
  * Program to randomly generate month name
  * @author Laura Witherspoon
@@ -5,22 +7,20 @@
  * Date: 9/1/2017
  */
 
-import java.util.Random;
-
 public class RandomMonth {
 
     /**
      * Generates a random number between min and max
-     * @param min Minimim value of random number
-     * @param max Maximim value of random number
+     * @param min Minimum value of random number
+     * @param max Maximum value of random number
      * @return An integer between the min and max inclusively
      */
-    public static int randomInteger(int min, int max) {
+    private static int randomInteger(int min, int max) {
         Random rand = new Random();
         return (rand.nextInt((max - min) + 1) + min);
     }
 
-    public static String displayMonthName(int monthNumber) {
+    static String displayMonthName(int monthNumber) {
         String monthName;
 
         switch (monthNumber) {
