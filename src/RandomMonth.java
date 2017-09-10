@@ -15,11 +15,16 @@ public class RandomMonth {
      * @param max Maximum value of random number
      * @return An integer between the min and max inclusively
      */
-    private static int randomInteger(int min, int max) {
+    static int randomInteger(int min, int max) {
         Random rand = new Random();
         return (rand.nextInt((max - min) + 1) + min);
     }
 
+    /**
+     * Converts month number to corresponding month name
+     * @param monthNumber the number of the month (between 1 and 12 inclusively)
+     * @return the name of the corresponding month
+     */
     static String displayMonthName(int monthNumber) {
         String monthName;
 
